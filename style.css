@@ -1,0 +1,10 @@
+h1{color: blue;}
+
+.containerOfForm{
+  text-align: left;
+  width: 60%;
+  margin: 30px;
+}
+.textAlignCenter{
+  text-align: center;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A website for Training Managment Platform">
+  <meta name="author" content="Summaya, Ghoroub, Maryam">
+  <meta name="keywords" content="Add, create, session, new course, Training course">
+
+  <title>Add new session &#9825; </title>
+
+  <link rel="stylesheet" href="style.css"/> <!-- LINK the style page -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico"  />
+</head>
+
+<body>
+
+<center>
+
+  <div class="containerOfForm">
+  <h1>Registration of new training course</h1><br /><br />
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select Course Type</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Java Languge</option>
+        <option>Python Languge</option>
+        <option>C++ Languge</option>
+        <option>C Languge</option>
+        <option>C# Languge</option>
+        <option>JavaScript Languge</option>
+        <option>jQuery Languge</option>
+        <option>JScribt .NET Languge</option>
+        <option>MATLAB Languge</option>
+        <option>NPL Languge</option>
+        <option>Pascal Languge</option>
+        <option>Ruby Languge</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="formGroupExampleInput">Enter name of training course</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Information about the training course</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Number of Days</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>one day</option>
+        <option>two days</option>
+        <option>three days</option>
+        <option>four days</option>
+        <option>five days</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Total length of cours (in hours)</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Total hours ..">
+    </div>
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Maximum number of trainees</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Max num">
+    </div>
+
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">The name of the course provider</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Name ..">
+    </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address of course provider</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+
+    <label for="exampleFormControlInput1">Level</label><br />
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+      <label class="custom-control-label" for="customRadioInline1">Beginning</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+      <label class="custom-control-label" for="customRadioInline2">Intermediate</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+      <label class="custom-control-label" for="customRadioInline3">advanced</label>
+    </div>
+
+    <div class="mt-5 mb-5">
+        <label for="exampleFormControlInput1">Date and Time of course</label>
+        <input type="text" id="picker" class="form-control">
+    </div>
+
+    <label for="exampleFormControlInput1">Poster of the training course</label>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+<br /><br />
+   <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+</div>
+
+</center>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <!-- <script>
+    $('#picker').datetimepicker({
+        timepicker: true,
+        datepicker: true,
+        format: 'Y-m-d H:i', // formatDate
+        hours12: false,
+        step: 1
+    })
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"> </script>
+</body>
+</html>

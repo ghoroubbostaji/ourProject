@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A website for Training Managment Platform">
+  <meta name="author" content="Summaya, Ghoroub, Maryam">
+  <meta name="keywords" content="sing, register, acount, new, Training course">
+
+  <title>Register &#9825; </title>
+
+  <link rel="stylesheet" href="style.css"/> <!-- LINK the style page -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico"  />
+</head>
+
+<body>
+  <center>
+
+  <div class="containerOfForm">
+    <h2 class="textAlignCenter">Create a new account</h2><br />
+
+  <form>
+      <p><a href="login.html">Already have an account? Log in here </a></p>
+      <hr />
+      <div class="form-group">
+          <label for="exampleFormControlSelect1">Username</label>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input type="text" class="form-control fix-rounded-right" id="inlineFormInputGroupUsername2" placeholder="Username" required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+
+
+
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address of course provider</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+
+
+    </form>
+  </div>
+  </center>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="index.js" type="text/javascript"> </script>
+</body>
+</html>
