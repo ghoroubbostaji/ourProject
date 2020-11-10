@@ -38,28 +38,66 @@
         </div>
       </div>
 
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday">
-
-
-
-
-
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Email address of course provider</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="mt-5 mb-5">
+          <label for="exampleFormControlInput1 birthday">Birthday</label>
+          <input type="text" id="picker" class="form-control">
       </div>
 
+      <div class="form-row">
+      <div class="col-md-6 mb-5">
+        <label for="validationCustom01">Email</label>
+        <input type="Email" class="form-control" id="email"  placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 mb-5">
+        <label for="validationCustom02">Confirm Email</label>
+        <input type="email" class="form-control" id="confirm_email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+        <div id="validate" class="valid-feedback">
+          Emails should match
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-row">
+    <div class="col-md-6 mb-5">
+      <label for="validationCustom01">Password</label>
+      <input type="password" class="form-control" id="psw" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-5">
+      <label for="validationCustom02">Confirm Password</label>
+      <input type="password" class="form-control" name="psw" id="confirm_psw" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+      <div id="validate" class="valid-feedback">
+        Password should match
+      </div>
+    </div>
+  </div>
+<br />
+  <button class="btn btn-primary" type="submit">Register</button>
 
     </form>
   </div>
   </center>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
-    <script src="index.js" type="text/javascript"> </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+  <script>
+  $('#picker').datetimepicker({
+      timepicker: false,
+      datepicker: true,
+      format: 'Y-m-d', // formatDate
+      hours12: false,
+      step: 1
+  })
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
